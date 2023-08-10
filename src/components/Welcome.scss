@@ -1,0 +1,171 @@
+@import "/src/Utilities/Varibles.scss";
+
+.welcome-container,
+.welcome-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  height: 100%;
+  width: 100vw;
+  color: $green;
+  font-family: $font-titles;
+
+  .welcome-parent {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+    .welcome-child {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+
+      padding: 5vh;
+
+      height: 95vh;
+      font-size: 8vw;
+
+      .welcome-text {
+        font-size: 1.4rem;
+        width: 50%;
+      }
+
+      .welcome-title {
+        font-weight: 700;
+      }
+    }
+
+    .welcome-link {
+      position: absolute;
+      bottom: 5vh;
+      color: $green;
+      text-decoration: none;
+      font-weight: lighter;
+      font-size: 2rem;
+      transition: 0.25s ease;
+      transform-origin: center top;
+
+      &:hover {
+        cursor: none;
+        color: $greenhv;
+      }
+    }
+  }
+
+  .welcome-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: $green;
+    color: $blue;
+    height: 100vh;
+    font-size: 4vw;
+
+    .first-content {
+      display: flex;
+      flex-direction: row;
+      align-items: flex-start;
+      justify-content: center;
+    }
+
+    .second-content {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+      padding: 2.5%;
+
+      p {
+        margin: 0;
+        font-size: 2vw;
+      }
+    }
+
+    .left-content {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      width: 50%;
+      margin: 2.5%;
+    }
+
+    .right-content {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      width: 50%;
+      margin: 2.5%;
+
+      .pixels {
+        width: 60%;
+      }
+
+      .right-text {
+        width: 60%;
+        font-family: $font-texts;
+        font-weight: 300;
+        font-size: 1.4vw;
+        margin: 1%;
+      }
+    }
+
+    .welcome-text {
+      font-family: $font-texts;
+      font-weight: 300;
+      font-size: 1.6vw;
+      width: 50%;
+    }
+
+    .welcome-title2 {
+      font-weight: 700;
+    }
+  }
+
+  .welcome-content-final {
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding-right: 5%;
+    padding-left: 5%;
+    padding-top: 15vh;
+    padding-bottom: 15vh;
+    height: 70vh;
+    width: 100%;
+    font-size: 6vw;
+
+    .welcome-text {
+      font-size: 1.4rem;
+      width: 50%;
+    }
+
+    .welcome-title {
+      font-weight: 700;
+    }
+  }
+}
+
+.welcome-container {
+  margin-bottom: 5vh;
+}
+
+@media screen and (max-width: 800px) {
+}
+
+@media screen and (max-width: 400px) and (min-width: 250px) {
+  .welcome-title,
+  .welcome-title2 {
+    font-size: 10vw;
+  }
+}

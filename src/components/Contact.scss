@@ -1,0 +1,16 @@
+@import "/src/Utilities/Varibles.scss";
+
+.contact-parent {
+  display: flex;
+  height: 100vh;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-family: $font-titles;
+
+  .contact-text {
+    color: $green;
+    font-size: 3rem;
+  }
+}

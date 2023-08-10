@@ -1,0 +1,21 @@
+@import "/src/Utilities/Varibles.scss";
+
+.language-selector{
+   display: flex;
+   flex-direction: row;
+   align-items: center;
+   justify-content: center;
+   gap: 12px;
+   margin: 1%;
+}
+
+.language-option{
+   color: white;
+   font-family: $font-texts;
+
+   &:hover{
+      transition: 0.35s ease-out;
+      transform: scale(1.2);
+      cursor: pointer;
+   }
+}

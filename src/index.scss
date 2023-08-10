@@ -1,0 +1,21 @@
+@import "/src/Utilities/Varibles.scss";
+
+html{
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: $blue;
+  width: 100vw;
+  height: 100vh;
+  overflow-x: hidden;
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}

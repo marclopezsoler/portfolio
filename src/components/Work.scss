@@ -1,0 +1,54 @@
+@import "/src/Utilities/Varibles.scss";
+
+.work-parent {
+  display: flex;
+  padding-bottom: 15vh;
+  height: 100%;
+  flex-direction: column;
+  font-family: $font-titles;
+
+  .tags {
+    position: fixed;
+    bottom: 15%;
+    left: 10%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    align-self: start;
+
+    a {
+      font-size: 4rem;
+    }
+  }
+
+  .work-child-1 {
+    display: flex;
+    align-items: flex-end;
+    flex-direction: column;
+
+    a {
+      font-family: $font-titles;
+      text-decoration: underline;
+      font-weight: lighter;
+      color: $green;
+      text-decoration: none;
+    }
+
+    .work-outline {
+      margin-right: 10%;
+      width: 70%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: flex-end;
+      perspective: 3000px;
+      animation: 0.5s ease-out;
+    }
+  }
+}
+
+.tag-text {
+  padding-top: 15vh;
+  font-size: 1.4rem;
+}

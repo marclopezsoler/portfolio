@@ -1,0 +1,27 @@
+@import "/src/Utilities/Varibles.scss";
+
+.bg-parent {
+  position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  height: 100%;
+  z-index: -100;
+
+  .bg-text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    user-select: none;
+    position: fixed;
+    width: 100vw;
+    z-index: -2;
+    font-weight: 800;
+    font-size: 22.5vw;
+    font-family: $font-titles;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke: 0.5px $greenop;
+    line-height: calc(20rem - 3vw);
+  }
+}

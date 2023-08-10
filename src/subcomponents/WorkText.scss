@@ -1,0 +1,27 @@
+@import "/src/Utilities/Varibles.scss";
+
+.work-outline > p {
+  text-decoration: none;
+  text-align: right;
+  font-family: $font-titles;
+  font-size: 5rem;
+  font-weight: 600;
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke: 1px $green;
+  margin: 0% 0%;
+  transform-origin: center right;
+  transform: rotateY(-20deg);
+  transition: 0.35s;
+  &:hover {
+    transform: rotateY(-10deg);
+    -webkit-text-fill-color: $green;
+    -webkit-text-stroke: 0px $green;
+  }
+}
+
+.bar {
+  font-size: 1.2rem;
+  -webkit-text-fill-color: $green;
+  -webkit-text-stroke: 0px transparent;
+  flex-wrap: nowrap;
+}
